@@ -1,0 +1,32 @@
+name: "Got an Idea? / Есть идея?"
+description: "Share a suggestion for AVE Addon Manager! / Предложите улучшение AVE Addon Manager!"
+title: "[Idea] "
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for sharing your idea! / Спасибо за вашу идею!
+
+        You can write in Russian or English. / Можно писать на русском или английском.
+  - type: textarea
+    id: idea
+    attributes:
+      label: "What's your idea? / В чём идея?"
+      description: "What would you like to add or change? / Что вы хотели бы добавить или изменить?"
+      placeholder: "I'd like to... / Мне хотелось бы..."
+    validations:
+      required: true
+  - type: textarea
+    id: benefit
+    attributes:
+      label: "How would it help? / Чем это поможет?"
+      description: "What would become easier or more convenient? / Что станет проще или удобнее?"
+    validations:
+      required: false
+  - type: textarea
+    id: examples
+    attributes:
+      label: "Examples or screenshots / Примеры или скриншоты"
+      description: "Optional. Add screenshots, sketches or links. / Необязательно. Можно приложить наброски, скриншоты или ссылки."
+    validations:
+      required: false
