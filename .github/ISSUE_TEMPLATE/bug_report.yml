@@ -1,0 +1,54 @@
+name: "Found a Bug? / Нашли ошибку?"
+description: "Something not working? Let me know! / Что-то не работает? Напишите мне!"
+title: "[Bug] "
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for testing AVE Addon Manager Alpha! / Спасибо за тестирование AVE Addon Manager Alpha!
+
+        Just answer the questions below in English or Russian. / Ответьте на вопросы ниже на любом удобном языке.
+  - type: textarea
+    id: problem
+    attributes:
+      label: "What happened? / Что случилось?"
+      description: "Describe the problem in your own words. / Расскажите своими словами, что пошло не так."
+      placeholder: "Example / Например: After switching to Edit Mode, the tab disappeared and didn't return."
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: "How can I repeat it? / Как повторить?"
+      description: "What did you do before the problem appeared? / Что вы делали перед появлением ошибки?"
+      placeholder: "1. ...\n2. ...\n3. ..."
+    validations:
+      required: false
+  - type: input
+    id: blender
+    attributes:
+      label: "Blender version / Версия Blender"
+      placeholder: "5.2 LTS"
+    validations:
+      required: true
+  - type: input
+    id: ave
+    attributes:
+      label: "AVE version / Версия AVE"
+      placeholder: "0.8.0 Alpha"
+    validations:
+      required: true
+  - type: input
+    id: other-addon
+    attributes:
+      label: "Other addon (if any) / Другой аддон (если есть)"
+      placeholder: "Bike Chain"
+    validations:
+      required: false
+  - type: textarea
+    id: screenshots
+    attributes:
+      label: "Screenshots or errors / Скриншоты или ошибки"
+      description: "You can drag images here, or paste console errors. Remove private information first. / Перетащите изображения или вставьте текст ошибки, убрав личные данные."
+    validations:
+      required: false
